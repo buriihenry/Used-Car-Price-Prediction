@@ -1,34 +1,26 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
 
-<html>
-	<head>
-		<title>Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<body>
+ <div class="login">
+	<h1>Used Car Price Prediction</h1>
 
-	
-
-		<!-- Main -->
-		
-
-		<!-- Footer -->
-			<div id="footer">
-				<div class="container medium">
-
-					<header class="major last">
-						<h2>Used Car Price Prediction</h2>
-					</header>
-
-					<p> Fill the Details to predict the price of your car.</p>
-
-					 <!-- User Input Form-->
-    <form action="/" method="POST">
+     <!-- Main Input For Receiving Query to our ML -->
+     <form action="/" method="POST">
         <div class="form-group">
             <label for="Price">What is The Present ShowRoom Price:</label>
-            <input type="number" step="0.01" class="form-control" placeholder="Price (In Dollars)" id="Price" name="price" required><br>
+            <input type="number" step="0.01" class="form-control" placeholder="Price (In Dollar)" id="Price" name="price" required><br>
 
             <label for="Age">Car Age:</label>
             <input type="number" step="0.01" class="form-control" placeholder="Age" id="Age" name="age" required><br>
@@ -58,28 +50,13 @@
         </div>
     </form>
 
-    <div class="container">
-        <h2></h2>
-        <div class="alert alert-info" role="alert">
-          <strong></strong> Pridicted price of your car is : {{output}}
-        </div>
-      </div>
 
-					
+   <br>
+   <br>
+   <strong></strong> Pridicted price of your car is : {{output}}
 
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="#">Henry Burii</a></li>
-					</ul>
+ </div>
 
-				</div>
-			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
