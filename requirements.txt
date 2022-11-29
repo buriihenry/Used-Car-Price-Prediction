@@ -13,4 +13,5 @@ Werkzeug==2.2.2
 wincertstore==0.2
 setuptools==59.8.0
 numpy==1.19.2
+python==3.9.10
 gunicorn
