@@ -9,13 +9,7 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<div id="header">
-				<span class="logo icon fa-paper-plane"></span>
-				<h1>Hi. This is my Portfolio.</h1>
-				<p>See my works below
-				</p>
-			</div>
+	
 
 		<!-- Main -->
 		
@@ -25,16 +19,16 @@
 				<div class="container medium">
 
 					<header class="major last">
-						<h2>Questions or comments?</h2>
+						<h2>Used Car Price Prediction</h2>
 					</header>
 
-					<p> Leave a message, I will respond as soon as it hits my inbox.</p>
+					<p> Fill the Details to predict the price of your car.</p>
 
 					 <!-- User Input Form-->
     <form action="/" method="POST">
         <div class="form-group">
             <label for="Price">What is The Present ShowRoom Price:</label>
-            <input type="number" step="0.01" class="form-control" placeholder="Price (In Lakh)" id="Price" name="price" required><br>
+            <input type="number" step="0.01" class="form-control" placeholder="Price (In Dollars)" id="Price" name="price" required><br>
 
             <label for="Age">Car Age:</label>
             <input type="number" step="0.01" class="form-control" placeholder="Age" id="Age" name="age" required><br>
@@ -64,15 +58,14 @@
         </div>
     </form>
 
-					<ul class="icons">
-		
-						<li><a href="https://github.com/buriihenry" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/henry-burii" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										
-					</ul>
+    <div class="container">
+        <h2></h2>
+        <div class="alert alert-info" role="alert">
+          <strong></strong> Pridicted price of your car is : {{output}}
+        </div>
+      </div>
+
+					
 
 					<ul class="copyright">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="#">Henry Burii</a></li>
