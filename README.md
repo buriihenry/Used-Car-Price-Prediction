@@ -2,7 +2,7 @@
 In this project I will show you how to deploy ML model using Flask 
 
 ### Requirements
-You must have Scikit Learn, Pandas (for Machine Leraning Model) and Flask (for API) installed.
+You must have Scikit Learn, Pandas and Flask installed.
 
 Flask version: 2.2.2
 pip install Flask==2.2.2
