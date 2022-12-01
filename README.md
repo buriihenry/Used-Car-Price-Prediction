@@ -26,5 +26,5 @@ Enter valid values in the form and hit Submit.
 
 If everything goes well, you should  be able to see the predcited vaule on the HTML page!
 
-Hit $ add-stars -r if you like this project:
+$ add-stars -r
 
